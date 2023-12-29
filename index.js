@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import Addstudent from './routes/Addstudent.js';
 // import multer from "multer";
-// import router from "./routes/Addstudent.js";
+import router from "./routes/Addstudent.js";
 // import feedbackRoutes from './routes/feedbackRoutes.js';
 
  
