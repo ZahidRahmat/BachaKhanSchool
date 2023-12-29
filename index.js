@@ -2,10 +2,10 @@ import mongoose from "mongoose";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import Addstudent from './routes/Addstudent.js';
-import multer from "multer";
-import router from "./routes/Addstudent.js";
-import feedbackRoutes from './routes/feedbackRoutes.js';
+// import Addstudent from './routes/Addstudent.js';
+// import multer from "multer";
+// import router from "./routes/Addstudent.js";
+// import feedbackRoutes from './routes/feedbackRoutes.js';
 
  
 const app = express();
@@ -20,9 +20,9 @@ app.listen(5000,()=> console.log("server is listening"));
 app.use(cors());
 app.use(bodyParser.json({extended : true}));
 app.use(bodyParser.urlencoded({extended : true}));
-app.use("/Addstudent",Addstudent);
-// app.use("/DeleteStudent",Addstudent);
-app.use('/Deleterecord', Addstudent);
-// app.use("/ViewApplicants",hostelApplications);
-app.use('/Feedback', feedbackRoutes);  // Use a specific prefix for your API routes
+// app.use("/Addstudent",Addstudent);
+// // app.use("/DeleteStudent",Addstudent);
+// app.use('/Deleterecord', Addstudent);
+// // app.use("/ViewApplicants",hostelApplications);
+// app.use('/Feedback', feedbackRoutes);  // Use a specific prefix for your API routes
 
