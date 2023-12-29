@@ -25,7 +25,7 @@ app.get('/',(req,res)=>{
 })
 
 app.use("/Addstudent",Addstudent);
-// // app.use("/DeleteStudent",Addstudent);
+app.use("/DeleteStudent",Addstudent);
 // app.use('/Deleterecord', Addstudent);
 // // app.use("/ViewApplicants",hostelApplications);
 // app.use('/Feedback', feedbackRoutes);  // Use a specific prefix for your API routes
