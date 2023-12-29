@@ -17,7 +17,11 @@ mongoose.connect(apiKey, {
 }).then(()=>console.log("connected to database")).catch(()=>console.log("not"));
 
 app.listen(5000,()=> console.log("server is listening"));
-app.use(cors());
+app.use(cors({
+    origin: "https://front-end-bacha-khan-school.vercel.app", // Update to your frontend URL
+    methods: ["POST", "GET","PUT","DELETE"],
+    credentials: true
+  }));
 app.use(bodyParser.json({extended : true}));
 app.use(bodyParser.urlencoded({extended : true}));
 app.get('/',(req,res)=>{
