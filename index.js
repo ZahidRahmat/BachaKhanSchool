@@ -20,6 +20,10 @@ app.listen(5000,()=> console.log("server is listening"));
 app.use(cors());
 app.use(bodyParser.json({extended : true}));
 app.use(bodyParser.urlencoded({extended : true}));
+app.get('/',(req,res)=>{
+ res.send("Deployment is working");
+})
+
 // app.use("/Addstudent",Addstudent);
 // // app.use("/DeleteStudent",Addstudent);
 // app.use('/Deleterecord', Addstudent);
