@@ -24,7 +24,7 @@ app.get('/',(req,res)=>{
  res.send("Deployment is working");
 })
 
-// app.use("/Addstudent",Addstudent);
+app.use("/Addstudent",Addstudent);
 // // app.use("/DeleteStudent",Addstudent);
 // app.use('/Deleterecord', Addstudent);
 // // app.use("/ViewApplicants",hostelApplications);
